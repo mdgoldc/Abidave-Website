@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abidave Construction Company Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Abidave Construction Company Ltd</h1>
+    <p>Building Your Dreams into Reality</p>
+  </div>
+</header>
+
+<nav>
+  <div class="container">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="quote-btn" onclick="openQuoteForm()">Request a Quote</button></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home" class="container">
+  <h2>Welcome to Abidave Construction Company Ltd</h2>
+  <p>We are a trusted construction company based in Abuja, Nigeria. Our commitment is to deliver exceptional building projects with the highest standards of quality and professionalism.</p>
+</section>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p>Abidave Construction Company Ltd is a leading construction service provider located at No. 5 Aco Estate, Abuja, Nigeria.
+     We specialize in residential, commercial, and industrial construction projects. Our team of experienced professionals
+     ensures that every project is handled with precision, efficiency, and attention to detail.</p>
+</section>
+
+<section id="services" class="container">
+  <h2>Our Services</h2>
+  <ul class="services-list">
+    <li>Residential Building Construction</li>
+    <li>Commercial Building Projects</li>
+    <li>Renovations and Remodeling</li>
+    <li>Road and Infrastructure Development</li>
+    <li>Architectural Design and Planning</li>
+    <li>Project Management</li>
+  </ul>
+</section>
+
+<section id="gallery" class="container">
+  <h2>Our Recent Projects</h2>
+  <div class="slider">
+    <img src="images/project1.jpg" alt="Project 1" class="slide active">
+    <img src="images/project2.jpg" alt="Project 2" class="slide">
+    <img src="images/project3.jpg" alt="Project 3" class="slide">
+    <img src="images/project4.jpg" alt="Project 4" class="slide">
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> No. 5 Aco Estate, Abuja, Nigeria</p>
+  <p><strong>Phone:</strong> 09018125344</p>
+  <p><strong>Email:</strong> <a href="mailto:Abidaveconstructionltd@gmail.com">Abidaveconstructionltd@gmail.com</a></p>
+
+  <form action="mailto:Abidaveconstructionltd@gmail.com" method="post" enctype="text/plain" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Abidave Construction Company Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Quote Form Popup -->
+<div id="quoteForm" class="popup-form">
+  <form class="form-content">
+    <span class="close" onclick="closeQuoteForm()">&times;</span>
+    <h2>Request a Quote</h2>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="text" placeholder="Phone Number" required>
+    <textarea rows="4" placeholder="Project Details..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2349018125344" class="whatsapp" target="_blank">
+  <img src="images/whatsapp.png" alt="WhatsApp Chat">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
